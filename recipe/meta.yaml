@@ -10,7 +10,7 @@ source:
   sha256: 4251acc80e2b7c9b7b8823456ea0fceeb0734dac2df7636d3c711b38476b5a76
 
 build:
-  skip: true  # [py_freethreading]
+  skip: true  # [python.endswith("t")]
   script_env:
     - PYO3_USE_ABI3_FORWARD_COMPATIBILITY=1
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
